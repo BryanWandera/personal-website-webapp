@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379" height="234" viewBox="0 0 379 234">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.261" cy="0.325" r="0.429" gradientTransform="matrix(1, -0.012, 0.02, 1.652, -0.006, -0.209)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#adb9f4"/>
+      <stop offset="0" stop-color="#b1bcf4"/>
+      <stop offset="1" stop-color="#dfe4fa"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_24" data-name="Group 24" transform="translate(-4599 406)">
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="379" height="234" transform="translate(4599 -406)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_20" data-name="Rectangle 20" width="59" height="59" transform="translate(4624 -369)" fill="none"/>
+    <path id="Path_9" data-name="Path 9" d="M106.3,162.533v10.538a1.854,1.854,0,0,1-1.854,1.854H72" transform="translate(4568.688 -493.863)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="2.5" cy="3" rx="2.5" ry="3" transform="translate(4638 -330)"/>
+    <path id="Path_10" data-name="Path 10" d="M36.241,62.589,41.847,30.8a1.854,1.854,0,0,1,2.148-1.5l12.782,2.254a1.854,1.854,0,0,1,1.5,2.148L52.646,65.649a8.344,8.344,0,0,1-9.505,6.795A8.475,8.475,0,0,1,36.241,62.589Z" transform="translate(4596.258 -391.481)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_11" data-name="Path 11" d="M92.185,104.071,109.1,97.916a1.854,1.854,0,0,1,2.377,1.108l4.439,12.2A1.854,1.854,0,0,1,114.8,113.6l-30.491,11.1" transform="translate(4559.229 -444.135)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <text id="Your_website_is_your_sales_rep." data-name="Your website is your sales rep." transform="translate(4699 -369)" font-size="25" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="24">Your website is your </tspan><tspan x="0" y="54" fill="#0427cf">sales </tspan><tspan y="54">rep.</tspan></text>
+    <text id="Your_website_should_make_your_product_service_as_attractive_as_possible_." data-name="Your website should make your product / service as attractive as possible,." transform="translate(4631 -289)" font-size="20" font-family="Aileron-Regular, Aileron"><tspan x="0" y="19">Your website should make your </tspan><tspan x="0" y="43">product / service as attractive as </tspan><tspan x="0" y="67">possible,.</tspan></text>
+  </g>
+</svg>

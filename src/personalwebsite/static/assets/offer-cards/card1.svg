@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379" height="234" viewBox="0 0 379 234">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.261" cy="0.325" r="0.62" gradientTransform="matrix(-0.001, 1, -0.582, -0.001, 0.451, 0.064)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#adb9f4"/>
+      <stop offset="0" stop-color="#b1bcf4"/>
+      <stop offset="0" stop-color="#b7c1f5"/>
+      <stop offset="1" stop-color="#dfe4fa"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_27" data-name="Group 27" transform="translate(-4991 406)">
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="379" height="234" transform="translate(4991 -406)" fill="url(#radial-gradient)"/>
+    <path id="Path_8" data-name="Path 8" d="M37.791,40.138,51.084,75.584a1.827,1.827,0,0,0,3.427-.017l5.325-14.644a1.827,1.827,0,0,1,1.092-1.092l14.644-5.325a1.827,1.827,0,0,0,.017-3.427L40.143,37.787a1.827,1.827,0,0,0-2.352,2.352Z" transform="translate(4998.928 -389.069)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <text id="Visitor_conversion" data-name="Visitor conversion" transform="translate(5092 -347)" fill="#0427cf" font-size="25" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="24" fill="#000">Visitor </tspan><tspan y="24" fill="#0427cf">conversion</tspan></text>
+    <text id="Clever_design_converts_more_visitors_into_customers." data-name="Clever design converts more visitors into customers." transform="translate(5037 -283)" font-size="20" font-family="Aileron-Regular, Aileron"><tspan x="0" y="19">Clever design converts more </tspan><tspan x="0" y="43">visitors into customers.</tspan></text>
+    <line id="Line_2" data-name="Line 2" x2="16.306" y2="16.306" transform="translate(5059.396 -328.605)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

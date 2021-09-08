@@ -1,15 +1,282 @@
+{% load static %}
 <!DOCTYPE html>
+
 <html>
-    <head></head>
-    <body>
-        <h1>
-            Ok here
-        </h1>
-        <div>
-            {% for piece in portfolio_pieces %}
-            <p>{{piece.link}}</p>
-            {% endfor %}
-           
+
+<head>
+
+    <title>Bryan Wandera: A website designer and developer.</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{% static '/assets/feature-image.jpg' %}">
+    <meta name="twitter:card" content="summary">
+    </meta>
+    <meta name="twitter:title" content="Bryan Wandera - A website designer and developer">
+    </meta>
+    <meta name="twitter:site" content="@BryanWandera1">
+    </meta>
+    <meta name="twitter:description" content="I design and develop goal driven high performance websites.">
+    </meta>
+    <meta name="twitter:image" content="{% static '/assets/feature-image.jpg' %}">
+    </meta>
+
+    <style>
+        @font-face {
+            font-family: 'SpaceGrotesk';
+            src: url("{% static 'styles/fonts/SpaceGrotesk-Bold.woff2' %}");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SpaceGrotesk';
+            src: url("{% static 'styles/fonts/SpaceGrotesk-Bold.woff2' %}");
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <script src="{% static '/scripts/animations.js' %}">
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTZWZ832H6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BTZWZ832H6');
+    </script> -->
+</head>
+
+<body>
+    <div id="landing-page" itemscope itemtype="https://schema.org/Person">
+        <div class="page" id="landing-page">
+
+            <img class="blueBlob" id="blueBlobOne" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobTwo" src="{% static '/assets/blueBlob.svg' %}">
+            <div class="glassCurtain" id="foldCurtain"></div>
+            <div id="foldContent">
+                <div id="navigationButtons">
+                    <a href="#portfolio"><span id="navMyWork">MY WORK</span></a>
+                    <a href="#about"><span id="navAbout">ABOUT</span></a>
+                    <button onclick="window.location.href='mailto:hello@bryanwandera.com';"
+                        id="navContactCallToAction">CONTACT</button>
+                </div>
+                <p class="displayText" id="introduceMyself">Hi, I'm <span class="blueTextHighlight">Bryan</span>, <br>
+                    I design & develop <u>goal&nbsp;driven</u>
+                    high performance
+                    websites.
+
+                </p>
+                <p class="mainBodyText" id="subIntroduceMyself">I help businesses build credibility, trust & an
+                    impressive online presence by designing websites that are tailored to their brand.</p>
+                <button onclick="window.location.href='mailto:hello@bryanwandera.com';" class="letsChatButton">Let's
+                    Chat
+                </button>
+            </div>
+
         </div>
-    </body>
-    </html>
+        <div class="page" id="offer">
+            <div id="valuePropositionContainer">
+                <div id="valuePropositionGrid">
+                    <div id="valuePropositionText">
+                        <p class="bigText">You want a <span class="blueTextHighlight">goal&nbsp;driven</span> website,
+                            not just a website.</p>
+                        <hr>
+                        <p class="mainBodyText">If your website is not working to grow your brand, then it is a waste of
+                            money.</p>
+                    </div>
+                    <div id="valuePropositionCardsGrid">
+                        <img class="valueCard"
+                            alt="A card that reads: Clever design converts more visitors into customers."
+                            src="{% static '/assets/offer-cards/card1.svg' %}">
+                        <img class="valueCard"
+                            alt="A card that reads: Your website should make your product or service as attractive as possible."
+                            src="{% static '/assets/offer-cards/card2.svg' %}">
+                        <img class="valueCard" alt="A card that reads: You want to show up first on google search."
+                            src="{% static '/assets/offer-cards/card3.svg' %}">
+                        <img class="valueCard"
+                            alt="A card that reads: Finding information on your site should be frictionless."
+                            src="{% static '/assets/offer-cards/card4.svg' %}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page" id="portfolio">
+            <img class="blueBlob" id="blueBlobThree" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobFive" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobSix" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobSeven" src="{% static '/assets/blueBlob.svg' %}">
+            <img class="blueBlob" id="blueBlobEight" src="{% static '/assets/blueBlob.svg' %}">
+            <div class="glassCurtain" id="myWorkCurtain"></div>
+            <div id="myWorkContainer">
+                <p class="bigText">Some of my <span class="blueTextHighlight">Designs</span>.</p>              
+                {% for piece in portfolio_pieces %}
+                <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+                    <p class="project-name" itemprop="name">{{piece.title}}</p>
+                    <a href="{{piece.link}}">
+                        <img class="portfolioImage" itemprop="image"
+                            alt="some alt text"
+                            src="{{piece.image.url}}">
+                    </a>
+                </div>
+                {% endfor %}
+                <button onclick="window.location.href='mailto:hello@bryanwandera.com';"
+                    class="centeredContactButton">Contact me</button>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="page" id="about">
+            <div class="centeredDiv">
+                <div id="aboutSectionGrid">
+                    <h2 class="bigText">A little <span class="blueTextHighlight">about me</span> and how I approach
+                        design.</h2>
+                    <hr class="horizontalRule">
+                    <p class="mainBodyText">My name is <span itemprop="givenName">Emmanuel Brian</span> <span
+                            itemprop="familyName">Wandera</span>; I am a <span itemprop="jobTitle">website designer and
+                            developer</span>.
+
+                    <p class="mainBodyText">
+                        {% for text in about_copy %}
+                        {{text.paragraph_one}}
+                        {% endfor %}
+                    </p>
+
+
+                    <p class="mainBodyText">
+                        {% for text in about_copy %}
+                        {{text.paragraph_two}}
+                        {% endfor %}
+                    </p>
+                    </p>
+
+
+                </div>
+                <button onclick="window.location.href='mailto:hello@bryanwandera.com';"
+                    class="centeredContactButton">Contact me</button>
+            </div>
+
+        </div>
+        <div class="page" id="expertise">
+            <div class="centeredDiv">
+                <h2 class="bigText"><span class="blueTextHighlight">Tools</span> and languages.</h2>
+
+                <hr class="horizontalRule">
+                <div id="toolsGrid">
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/javascript.svg' %}">
+                        <p class="toolsText">JavaScript</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/html.svg' %}">
+                        <p class="toolsText">HTML</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/css.svg' %}">
+                        <p class="toolsText">CSS</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/flutter.svg' %}">
+                        <p class="toolsText">Flutter</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/dart.svg' %}">
+                        <p class="toolsText">Dart</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/django.svg' %}">
+                        <p class="toolsText">Django</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/python.svg' %}">
+                        <p class="toolsText">Python</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/firebase.svg' %}">
+                        <p class="toolsText">Firebase</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/xd.svg' %}">
+                        <p class="toolsText">Adobe XD</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/framer.svg' %}" style="width: 48px;">
+                        <p class="toolsText">Framer</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/illustrator.svg' %}">
+                        <p class="toolsText">Adobe<br>Illustrator</p>
+                    </div>
+                    <div class="tool">
+                        <img src="{% static '/assets/tools/photoshop.svg' %}">
+                        <p class="toolsText">Adobe<br>Photoshop</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <footer>
+            <div id="footer">
+                <p>Designed and developed by Emmanuel Brian Wandera</p>
+                <p>Copyright © 2021</p>
+                <p>All Rights Reserved</p>
+                <p class=" headingInFooter">Say hello</p>
+                <a href="mailto:hello@bryanwandera.com">
+                    <p><span itemprop="email">hello@bryanwandera.com</span></p>
+                </a>
+                <a href="tel:+256755987004">
+                    <p><span itemprop="telephone">+256 755 987004</span></p>
+                </a>
+                <p>
+                    <a href="https://twitter.com/BryanWandera1">
+                        <img src="{% static '/assets/socialIcons/twitter.svg' %}">
+                    </a>
+                    <a href="https://www.linkedin.com/in/bryanwandera/">
+                        <img src="{% static '/assets/socialIcons/linkedin.svg' %}">
+                    </a>
+                </p>
+
+            </div>
+        </footer>
+
+        <svg width="100%" height=auto>
+            <filter id="blurElement">
+                <feGaussianBlur stdDeviation="25" in="SourceGraphic"></feGaussianBlur>
+            </filter>
+        </svg>
+    </div>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script> -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- <script src="/__/firebase/8.8.1/firebase-analytics.js"></script> -->
+
+    <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+
+
+
+</body>
+
+
+</html>

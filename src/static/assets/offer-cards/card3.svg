@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379" height="234" viewBox="0 0 379 234">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.739" cy="0.325" r="0.529" gradientTransform="matrix(0.999, 0.033, -0.056, 1.718, 0.019, -0.257)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#adb9f4"/>
+      <stop offset="0" stop-color="#b1bcf4"/>
+      <stop offset="1" stop-color="#dfe4fa"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(-5068 433)">
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="379" height="234" transform="translate(5068 -433)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="58" height="58" transform="translate(5099 -395)" fill="none"/>
+    <path id="Path_13" data-name="Path 13" d="M59.759,59.764H79.524a19.766,19.766,0,1,1-5.789-13.976" transform="translate(5067.991 -426.015)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <text id="Google_Ranking" data-name="Google Ranking" transform="translate(5181 -381)" fill="#0427cf" font-size="25" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="24" fill="#000">Google </tspan><tspan y="24" fill="#0427cf">Ranking</tspan></text>
+    <text id="You_want_your_site_to_show_up_first_in_google_search." data-name="You want your site to show up first in google search." transform="translate(5108 -323)" font-size="20" font-family="Aileron-Regular, Aileron"><tspan x="0" y="19">You want your site to show up first </tspan><tspan x="0" y="43">in google search.</tspan></text>
+  </g>
+</svg>

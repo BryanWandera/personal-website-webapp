@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="379" height="234" viewBox="0 0 379 234">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.261" cy="0.325" r="0.458" gradientTransform="matrix(1, -0.019, 0.034, 1.74, -0.011, -0.235)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#adb9f4"/>
+      <stop offset="0" stop-color="#b1bcf4"/>
+      <stop offset="0" stop-color="#b6c1f5"/>
+      <stop offset="1" stop-color="#dfe4fa"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(-4593 108)">
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="379" height="234" transform="translate(4972 126) rotate(180)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="59" height="59" transform="translate(4628 -72)" fill="none"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="22" cy="22" r="22" transform="translate(4635 -65)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_12" data-name="Path 12" d="M120,120h1.823v12.76h1.823" transform="translate(4535.343 -164.657)" fill="none" stroke="#0427cf" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="2.5" cy="2.5" r="2.5" transform="translate(4654 -55)"/>
+    <text id="Information_Delivery" data-name="Information Delivery" transform="translate(4705 -72)" fill="#0427cf" font-size="25" font-family="Aileron-Bold, Aileron" font-weight="700"><tspan x="0" y="24">Information</tspan><tspan y="24" xml:space="preserve" fill="#000"> Delivery</tspan></text>
+    <text id="Finding_information_on_your_website_should_be_frictionless." data-name="Finding information on your website should be frictionless." transform="translate(4634 8)" font-size="20" font-family="Aileron-Regular, Aileron"><tspan x="0" y="19">Finding information on your </tspan><tspan x="0" y="43">website should be frictionless.</tspan></text>
+  </g>
+</svg>
