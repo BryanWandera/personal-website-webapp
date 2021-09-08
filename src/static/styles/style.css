@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background-color: #010519;
+    background-color: green;
     overflow-x: hidden;
     overflow-y: hidden;    
    
@@ -34,15 +34,13 @@ body {
 
 #landing-page {
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    
     overflow-y: scroll;
     height: 100vh;
 }
 .page {
     overflow-x: hidden;
     width: 100vw;  
-    scroll-snap-align: start;
-    height: 100vh;  
 }
 
 
@@ -57,7 +55,7 @@ p {
 }
 .blueBlob {
     position: absolute;
-    overflow:hidden;
+    overflow: hidden;
     filter: url(#blurElement);
 }
 
@@ -128,6 +126,7 @@ p {
     
     
 }
+
 @media screen and (max-width:900px) {
     .displayText{    
         font-size: calc(25px + 3.7vw);
@@ -138,6 +137,7 @@ p {
     }
     .mainBodyText {
         font-size: calc(16px + 0.4vw);
+        padding-right: 10px;
     }
 }
 
@@ -207,6 +207,7 @@ u {
     padding-bottom: 1.5vh;
     padding-left: 2vh;
     padding-right: 2vh;
+    text-align: center;
 }  
 
 #navigationButtons{
@@ -267,6 +268,7 @@ u {
 #offer {
     text-align: center;
     vertical-align: middle;
+    padding-bottom: 10vh;
     
 }
 #valuePropositionContainer {
@@ -288,10 +290,10 @@ u {
 }
 #valuePropositionCardsGrid {
     display: inline-grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 45%;
     padding-right: 5vw;
     row-gap: 2vw;
-    column-gap: 2vw;
+    column-gap: 5vw;
     width: fit-content;
 }
 
@@ -311,6 +313,7 @@ u {
     font-size: calc(12px + 0.4vw);
     text-align: left;
     margin-bottom: 2vh;
+    
     
 }
 .toolsText{
@@ -347,7 +350,7 @@ u {
 }
 @media screen and (max-width: 760px) {
     .valueCard {
-        width: 49vw;
+        width: 40vw;
     }
 }
 #interPagePadding{
@@ -386,42 +389,7 @@ u {
     width: 90vw;
     
 }
-#blueBlobThree {
-    margin-left: 70vw;
-    margin-top: 10vh;
-    width: 30vw;
-    filter: url(#blurElement); 
-}
-#blueBlobFour {
-    margin-left: 55vw;
-    margin-top: 30vh;
-    width: 20vw;
-    filter: url(#blurElement); 
-}
-#blueBlobFive {
-    margin-left: 5vw;
-    margin-top: 50vh;
-    width: 18vw;
-    filter: url(#blurElement); 
-}
-#blueBlobSix {
-    margin-left: 75vw;
-    margin-top: 90vh;
-    width: 30vw;
-    filter: url(#blurElement); 
-}
-#blueBlobSeven {
-    margin-left: 2vw;
-    margin-top: 80vh;
-    width: 12vw;
-    filter: url(#blurElement); 
-}
-#blueBlobEight {
-    margin-left: 90vw;
-    margin-top: 100vh;
-    width: 30vw;
-    filter: url(#blurElement); 
-}
+
 #aboutSectionGrid{
     display: grid;
     grid-template-columns: 100%;
@@ -429,11 +397,12 @@ u {
 }
 #about {
     text-align: center;
-    height: 100vh;
+   
+    padding-top: 10vh;
 }
 #expertise {
     text-align: center;
-    height: 80vh;
+   
     
 }
 .centeredDiv{
@@ -474,7 +443,7 @@ u {
     text-align: center;
     background-color: white;
     bottom: 0px;
-    scroll-snap-align: bottom;
+   
     padding-top: 5vh;
 }
 #footer p {
@@ -593,5 +562,3 @@ u {
       margin-top: 0;
     }
   }
-
-

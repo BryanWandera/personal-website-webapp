@@ -109,18 +109,9 @@
             </div>
 
         </div>
-        <div class="page" id="portfolio">
-            <img class="blueBlob" id="blueBlobThree" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobFour" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobFive" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobSix" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobSeven" src="{% static '/assets/blueBlob.svg' %}">
-            <img class="blueBlob" id="blueBlobEight" src="{% static '/assets/blueBlob.svg' %}">
-            <div class="glassCurtain" id="myWorkCurtain"></div>
-            <div id="myWorkContainer">
-                <p class="bigText">Some of my <span class="blueTextHighlight">Designs</span>.</p>              
+        <div class="page" id="portfolio">          
+            <p id="myWorkContainer">
+                <p style="text-align: center;" class="bigText">Some of my <span class="blueTextHighlight">Designs</span>.</p>              
                 {% for piece in portfolio_pieces %}
                 <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
                     <p class="project-name" itemprop="name">{{piece.title}}</p>
@@ -131,11 +122,10 @@
                     </a>
                 </div>
                 {% endfor %}
-                <button onclick="window.location.href='mailto:hello@bryanwandera.com';"
-                    class="centeredContactButton">Contact me</button>
+        
 
 
-            </div>
+            </p>
 
 
 
@@ -255,7 +245,7 @@
             </div>
         </footer>
 
-        <svg width="100%" height=auto>
+        <svg width="100%" height="0">
             <filter id="blurElement">
                 <feGaussianBlur stdDeviation="25" in="SourceGraphic"></feGaussianBlur>
             </filter>
