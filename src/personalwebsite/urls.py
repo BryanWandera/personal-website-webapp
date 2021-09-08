@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mysite.views import portfolio_pieces_list_view
+from mysite.views import battlecreek_design_view
+from mysite.views import airbus_design_view
+from mysite.views import twentyeight_design_view
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -24,7 +27,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', portfolio_pieces_list_view)    
+    path('', portfolio_pieces_list_view),
+    path('battlecreek-design', battlecreek_design_view), 
+    path('airbus-design', airbus_design_view),
+    path('twentyeight-design', twentyeight_design_view)  
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

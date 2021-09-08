@@ -12,8 +12,12 @@ def portfolio_pieces_list_view(request):
     }
     return render(request, "index.html", context)
 
-# def about_copy_view(request):
-#     context = {
-#         "about_copy": AboutCopy.objects.all()
-#     }    
-#     return render(request, "index.html", context)
+
+def battlecreek_design_view(request):
+    return render(request, "battlecreek-design.html")
+
+def airbus_design_view(request):
+    return render(request, "airbus-design.html")
+
+def twentyeight_design_view(request):
+    return render(request, "twenty-eight-design.html")    

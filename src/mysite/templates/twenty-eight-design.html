@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title>Fashion Brand Concept Design.</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/favicon.png' %}">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{% static 'assets/feature-image.jpg' %}">
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:title" content="Bryan Wandera - Fashion Brand Concept Design"></meta>
+    <meta name="twitter:site" content="@BryanWandera1"></meta>
+    <meta name="twitter:description" content="A concept design for a fashion brand called twenty eight."></meta>
+    <meta name="twitter:image" content="{% static 'assets/feature-image.jpg' %}"></meta>
+    
+    <style>
+        @font-face {
+            font-family: 'SpaceGrotesk';
+            src: url("{% static 'styles/fonts/SpaceGrotesk-Bold.woff2' %}");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SpaceGrotesk';
+            src: url("{% static 'styles/fonts/SpaceGrotesk-Bold.woff2' %}");
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+        
+    </head>
+    <body class="full-design-page-body">
+        <div style="text-align: center; width: 100%;">
+            <h1 class="bigText">
+                Twenty Eight Concept.
+            </h1>
+         
+        </div>
+        <div style="width: 100%; text-align: center;">
+            <img src="{% static 'assets/portfolio-images/TwentyEightHomePage.png' %}"
+            alt="A screen grab of a concept website for a fashion company called Twenty Eight Styling."
+            style=" width: 100%; display: inline-block;">
+        </div>
+        <footer>
+            <div  id="footer">
+                <p>Designed and developed by Emmanuel Brian Wandera</p>
+                <p>Copyright © 2021</p>
+                <p>All Rights Reserved</p>
+                <p class=" headingInFooter">Say hello</p>
+                <a href="mailto:hello@bryanwandera.com">
+                    <p><span itemprop="email">hello@bryanwandera.com</span></p>
+                </a>
+                <a href="tel:+256755987004">
+                    <p><span itemprop="telephone">+256 755 987004</span></p>
+                </a>
+                <p>
+                    <a href="https://twitter.com/BryanWandera1">
+                        <img src="{% static 'assets/socialIcons/twitter.svg' %}">
+                    </a>
+                    <a href="https://www.linkedin.com/in/bryanwandera/">
+                        <img src="{% static 'assets/socialIcons/linkedin.svg' %}">
+                    </a>
+                </p>
+
+            </div>
+        </footer>
+    </body>
+</html>
