@@ -21,6 +21,7 @@ from mysite.views import airbus_design_view
 from mysite.views import twentyeight_design_view
 from mysite.views import spotify_playlists_view
 from mysite.views import spotify_api
+from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -34,7 +35,8 @@ urlpatterns = [
     path('airbus-design', airbus_design_view),
     path('twentyeight-design', twentyeight_design_view),
     path('playlists', spotify_playlists_view ),
-    path('spotifyapi', spotify_api)  
+    path('spotifyapi', spotify_api),  
+    path('playlists-final', TemplateView.as_view(template_name='index.html'))
 
 
 ]

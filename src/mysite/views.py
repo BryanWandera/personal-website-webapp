@@ -17,7 +17,7 @@ def portfolio_pieces_list_view(request):
         "about_copy": AboutCopy.objects.all()
 
     }
-    return render(request, "index.html", context)
+    return render(request, "home.html", context)
 
 
 def battlecreek_design_view(request):
