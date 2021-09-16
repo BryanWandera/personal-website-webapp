@@ -29,8 +29,11 @@ def airbus_design_view(request):
 def twentyeight_design_view(request):
     return render(request, "twenty-eight-design.html")    
 
-def spotify_playlists_view(request):
-    return render(request, "playlists.html")    
+def handler404(request, exception):
+    context = {}
+    response = render(request, "404.html", context=context)
+    response.status_code = 404
+    return response
 
 def spotify_api(request):
     if request.method == "GET":
@@ -46,4 +49,3 @@ def spotify_api(request):
     return HttpResponse(response, content_type='text/json')    
 
 
-# curl -H "Authorization: Basic MmZjMGI4ZjFhZDM5NDNlZWE0NjlmZWNkNDk1NzdiMmY6Y2QyNWE0OTA2YTEzNDA4Nzg0OThlYTM2MThlZTRhM2U=" -d grant_type=refresh_token -d refresh_token=AQBaVbMxMY9kYSyBeVQP-Uf5NUfbn0nIXm_hAJ8NbHYdgIAZ7eNJ9lvaMiijLrg0lyP3LE79qT6laYpdUeFQNvEO8kVy1Jlmqtvb1TDi_DVdcWWrSGHyfHxUIlJNy5X0LoE https://accounts.spotify.com/api/token    
