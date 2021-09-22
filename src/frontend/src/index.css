@@ -34,8 +34,8 @@ h1 {
 
 @media screen and (max-width: 760px){
   #playlists-grid{    
-    column-gap: 2vw;
-    row-gap: 4vw;
+    column-gap: 5vw;
+    row-gap: 10vw;
     
   }
 }

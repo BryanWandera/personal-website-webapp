@@ -27,6 +27,7 @@ from django.conf.urls import handler404
 
 
 handler404 = 'mysite.views.handler404'
+handler500 = 'mysite.views.handler500'
 
 
 urlpatterns = [

@@ -11,6 +11,3 @@ export const PlaylistCard = function (imageURL, name, description, id){
         </div>
     )
 }
-
-
-{/* <span>Add <i class="ph-heart-straight"></i></span> */}
