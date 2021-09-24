@@ -87,6 +87,15 @@ h1 {
   background-color:#1DB954 ;
   margin-top: 0.2rem;
 }
+
+.follow-button:hover {background-color: #007D2A}
+
+.follow-button:active {
+  background-color: #D62271;
+  
+  transform: translateY(4px); }
+
+
 .ph-heart-straight {
   font-weight: 700;
 }

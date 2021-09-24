@@ -35,6 +35,7 @@ def handler404(request, exception):
     response = render(request, "404.html", context=context)
     response.status_code = 404
     return response
+    
 
 def handler500(request):
     context = {}
@@ -54,5 +55,9 @@ def spotify_api(request):
             response = json.dumps([{'access_token':'could not get'}])    
 
     return HttpResponse(response, content_type='text/json')    
+
+
+
+    
 
 
