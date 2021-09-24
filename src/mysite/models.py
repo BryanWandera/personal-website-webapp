@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class PortfolioPiece(models.Model):
     title = models.CharField(max_length=30)
-    image = models.ImageField(upload_to='static/assets/portfolio-images')
+    image = models.ImageField(upload_to='media/static/assets/portfolio-images')
     link = models.URLField(max_length=200)
 
     def __str__(self):

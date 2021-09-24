@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'SpaceGrotesk';
-    src: url('/mysite/styles/fonts/SpaceGrotesk.woff2') ;
+    src: url('./fonts/SpaceGrotesk.woff2') ;
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'SpaceGrotesk';
-    src: url('/mysite/styles/fonts/SpaceGrotesk-Bold.woff2') ;
+    src: url('./fonts/SpaceGrotesk-Bold.woff2') ;
     font-weight: bold;
     font-style: normal;
 }
@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background-color: green;
+    background-color: #010519;
     overflow-x: hidden;
     overflow-y: hidden;    
    
@@ -562,3 +562,19 @@ u {
       margin-top: 0;
     }
   }
+
+#page-not-found-body {
+    background-color: #010519 ;
+ }
+ 
+ #page-not-found-body h1 {
+     font-size: larger;
+ }
+ 
+ #page-not-found-body h2 {
+     font-size: large;
+ }
+ #page-not-found-body button {
+     font-size: medium;
+     padding: auto;
+ }
