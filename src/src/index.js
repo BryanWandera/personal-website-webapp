@@ -90,7 +90,7 @@ export const addPlaylistToLibrary = function(spotifyAccessToken, playlist_id){
       'Authorization': `Bearer ${spotifyAccessToken}`
     }
   }).then((response)=>{
-    if (response.status == 200){
+    if (response.status === 200){
       console.log("Success")
       alert('Added to library!😎')
     } else {
